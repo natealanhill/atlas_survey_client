@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import logo from './logo.svg'
 import './App.css'
-import Question from './components/question'
+import Question from '../components/question'
+import Poll from "../components/Poll";
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -40,6 +42,7 @@ function App() {
         </p>
       </header>
       <Question />
+      <Poll />
     </div>
   )
 }
